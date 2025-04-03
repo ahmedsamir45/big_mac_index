@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+ 
+    <div class="container mt-4">
+        <h1 class="mb-4 text-center">Big Mac Index Global Visualization</h1>
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="date-select" class="form-label">Select Date:</label>
+                    <select id="date-select" class="form-select"></select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="country-select" class="form-label">Select Country:</label>
+                    <select id="country-select" class="form-select">
+                        <option value="">-- Select a country --</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+        <div id="error-message" class="error-message" style="display: none;"></div>
+        
+        <div id="country-detail" class="country-detail mt-4 p-4 bg-light rounded">
+            <h2 id="country-name" class="mb-3"></h2>
+            <div id="country-info"></div>
+        </div>
+    </div>
+
+{% endblock %}

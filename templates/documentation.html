@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-4">
+    <h1 class="mb-4 text-center">API Documentation</h1>
+
+    <div class="mb-4">
+        <h2>Overview</h2>
+        <p>This API provides data visualization for the Big Mac Index, allowing users to explore price variations across countries and time periods.</p>
+        <p>The application is designed to help users compare the cost of a Big Mac in different currencies, track historical price trends, and visualize economic disparities globally.</p>
+    </div>
+
+    <div class="mb-4">
+        <h2>Features</h2>
+        <ul>
+            <li>Interactive global map visualization of the Big Mac Index.</li>
+            <li>Historical data tracking for multiple countries.</li>
+            <li>Time-series analysis of Big Mac prices.</li>
+            <li>Comparative bar charts for different regions.</li>
+            <li>Scatter plots showing the relationship between GDP and Big Mac prices.</li>
+        </ul>
+    </div>
+
+    <div class="mb-4">
+        <h2>Available Endpoints</h2>
+
+        <div class="mb-3">
+            <h3>1. Home</h3>
+            <p><strong>Endpoint:</strong> <code>/</code></p>
+            <p><strong>Method:</strong> GET</p>
+            <p>Returns the main page with the visualization interface, including map and data selection options.</p>
+        </div>
+
+        <div class="mb-3">
+            <h3>2. Get Data</h3>
+            <p><strong>Endpoint:</strong> <code>/data</code></p>
+            <p><strong>Method:</strong> GET</p>
+            <p>Returns Big Mac Index data for the selected date, including country-specific pricing information.</p>
+            <p><strong>Query Parameters:</strong></p>
+            <ul>
+                <li><code>date</code> (optional) - Specify a date to filter the data. If omitted, the latest available data will be used.</li>
+            </ul>
+            <p><strong>Response:</strong> JSON object containing map data, country prices, and available dates.</p>
+        </div>
+
+        <div class="mb-3">
+            <h3>3. Country Details</h3>
+            <p><strong>Endpoint:</strong> <code>/country/&lt;country_code&gt;</code></p>
+            <p><strong>Method:</strong> GET</p>
+            <p>Returns detailed historical pricing data for a given country, allowing for in-depth economic analysis.</p>
+            <p><strong>Path Parameters:</strong></p>
+            <ul>
+                <li><code>country_code</code> - The ISO A3 country code (e.g., USA, GBR, CHN).</li>
+            </ul>
+            <p><strong>Response:</strong> JSON list of historical price records for the specified country, including currency exchange rates and local prices.</p>
+        </div>
+
+        <div class="mb-3">
+            <h3>4. Charts Page</h3>
+            <p><strong>Endpoint:</strong> <code>/charts</code></p>
+            <p><strong>Method:</strong> GET</p>
+            <p>Returns the charts page with additional visualizations, including bar charts, time-series plots, and scatter diagrams.</p>
+        </div>
+
+        <div class="mb-3">
+            <h3>5. Chart Data</h3>
+            <p><strong>Endpoint:</strong> <code>/chart_data</code></p>
+            <p><strong>Method:</strong> GET</p>
+            <p>Returns data for various visualizations, including comparative price analysis and economic insights.</p>
+            <p><strong>Response:</strong> JSON object containing:</p>
+            <ul>
+                <li>Bar chart data (top 15 most expensive countries based on Big Mac price).</li>
+                <li>Time-series data for key economies (e.g., USA, UK, China, Japan, Germany).</li>
+                <li>Scatter plot data showing the relationship between GDP and Big Mac prices.</li>
+            </ul>
+        </div>
+
+        <div class="mb-3">
+            <h3>6. Documentation Page</h3>
+            <p><strong>Endpoint:</strong> <code>/documentation</code></p>
+            <p><strong>Method:</strong> GET</p>
+            <p>Returns this documentation page, providing details on API usage and available features.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

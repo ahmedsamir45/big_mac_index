@@ -1,0 +1,29 @@
+#map {
+    height: 600px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.legend {
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+.country-detail {
+    margin-top: 20px;
+    display: none;
+    border: 1px solid #ddd;
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -59,13 +59,12 @@ The Big Mac Index is an economic indicator that compares purchasing power betwee
    cd big_mac_index
 Here is the full Markdown text for your request:
 
-```markdown
-## Installation
+
 
 ### Install dependencies:
 ```bash
 pip install -r requirements.txt
-```
+
 
 ### Add your data file:
 - Download the Big Mac Index data as CSV

@@ -1,4 +1,3 @@
-
 // Color palette for charts
 const colors = [
     'rgba(54, 162, 235, 0.8)',
@@ -220,5 +219,3 @@ function createScatterChart(scatterData) {
         }
     });
 }
-
-console.log("charts")

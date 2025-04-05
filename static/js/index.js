@@ -1,4 +1,3 @@
-
 // Initialize the map
 const map = L.map('map').setView([20, 0], 2);
 
@@ -320,4 +319,3 @@ document.getElementById('country-select').addEventListener('change', function() 
         });
     }
 });
-console.log("index")

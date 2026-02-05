@@ -10,7 +10,6 @@ A web-based visualization tool for The Economist's Big Mac Index, showing global
 - [Data Sources](#data-sources)
 - [API Endpoints](#api-endpoints)
 - [Project Structure](#project-structure)
-- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -158,4 +157,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 
 You can copy and paste this Markdown into your file.
+
 

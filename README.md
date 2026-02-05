@@ -134,16 +134,6 @@ big_mac_index/
 └── README.md             # This file
 ```
 
-## Screenshots
-
-### World Map View
-*Interactive map showing Big Mac prices worldwide*
-
-### Historical Trends
-*Price evolution over time for selected countries*
-
-### Country Comparison
-*Side-by-side country price comparisons*
 
 ## Contributing
 
@@ -168,3 +158,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 
 You can copy and paste this Markdown into your file.
+
